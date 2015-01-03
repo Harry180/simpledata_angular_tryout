@@ -1,0 +1,22 @@
+﻿@{
+	ViewBag.Title = "Karol Seals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="title">Karol Seals:</h2>
+<div class="container" ng-controller="SealController as sealCtrl">
+	<div class="grid-wrapper">
+		<div class="row">
+			<span class="col-sm-2">First Name</span>
+			<span class="col-sm-2">Last Name</span>
+			<span class="col-sm-2">Age</span>
+			<span class="col-sm-2">Photo</span>
+		</div>
+		<div class="row" ng-repeat="seal in sealCtrl.Seals">
+			<span class="col-sm-2">{{seal.FirstName}}</span>
+			<span class="col-sm-2">{{seal.LastName}}</span>
+			<span class="col-sm-2">{{seal.Age}}</span>
+			<span class="col-sm-2">{{seal.Photo}}</span>
+		</div>
+	</div>
+</div>

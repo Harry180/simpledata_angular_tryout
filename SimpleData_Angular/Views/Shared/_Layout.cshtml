@@ -1,16 +1,28 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="karolSeals">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	<link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/bootstrap.css")" />
+	@Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
-
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<p class="col-sm-1">aaaa</p>
+				<p class="col-sm-1">bbb</p>
+			</div>
+		</div>
+		<div class="container">
+			@RenderBody()
+		</div>
+	</div>
+	@Scripts.Render("~/bundles/jquery")
+	<script type="text/javascript" src="@Url.Content("~/Scripts/angular.js")"></script>
+	<script type="text/javascript" src="@Url.Content("~/Scripts/app.js")"></script>
+	@RenderSection("scripts", required: false)
 </body>
 </html>
