@@ -1,0 +1,22 @@
+﻿@using System.Activities.Statements
+@model dynamic
+
+@{
+	ViewBag.Title = "title";
+	//Layout = "_Layout";
+	//ViewBag.Bytes = new byte[] { 0x41, 0x50, 0x4c, 0x49, 0x4b, 0x55, 0x4a, 0x20, 0x4d, 0x49, 0x4c, 0x4c, 0x45, 0x4e, 0x4e, 0x49, 0x55, 0x4d, 0x21, 0x1f };
+}
+
+<h2>title</h2>
+@{
+	foreach (var item in Model)
+	{
+		<text>@item.ContractorGUID</text> <br />
+		@: @item.Website_Url <br/>
+	}
+}
+@*<article>
+    <p>
+       @System.Text.Encoding.Default.GetString(ViewBag.Bytes)
+    </p>
+</article>*@
