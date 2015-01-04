@@ -1,4 +1,4 @@
 ﻿var app = angular.module('karolSeals', []);
 app.controller("SealController", function () {
-	this.Seals = [{ FirstName: "Ola", LastName: "Jakas", Age: 22, Photo: null }, { FirstName: "Kasia", LastName: "Jakas", Age: 13, Photo: null }];
+	this.Seals = [{ FirstName: "Seal1FirstName", LastName: "Jakas", Age: 22, Photo: null }, { FirstName: "Seal2FirstName", LastName: "Jakas", Age: 13, Photo: null }];
 });
