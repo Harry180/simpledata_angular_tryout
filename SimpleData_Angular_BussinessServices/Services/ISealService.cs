@@ -1,4 +1,6 @@
-﻿namespace SimpleData_Angular_BussinessServices.Services
+﻿using System;
+
+namespace SimpleData_Angular_BussinessServices.Services
 {
 	/// <summary>
 	/// ISealService Interface.

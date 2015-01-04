@@ -5,3 +5,4 @@ D:\Rozwój\DotNety\SimpleData_Angular\SimpleData_Angular_BussinessServices\bin\D
 D:\Rozwój\DotNety\SimpleData_Angular\SimpleData_Angular_BussinessServices\bin\Debug\Simple.Data.SqlServer.dll
 D:\Rozwój\DotNety\SimpleData_Angular\SimpleData_Angular_BussinessServices\obj\Debug\SimpleData_Angular_BussinessServices.dll
 D:\Rozwój\DotNety\SimpleData_Angular\SimpleData_Angular_BussinessServices\obj\Debug\SimpleData_Angular_BussinessServices.pdb
+D:\Rozwój\DotNety\SimpleData_Angular\SimpleData_Angular_BussinessServices\obj\Debug\SimpleData_Angular_BussinessServices.csprojResolveAssemblyReference.cache

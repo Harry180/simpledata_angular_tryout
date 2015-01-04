@@ -52,6 +52,8 @@
     <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\IContractorService.cs" />
     <Compile Include="Services\Impl\ContractorService.cs" />
+    <Compile Include="Services\Impl\SealService.cs" />
+    <Compile Include="Services\ISealService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

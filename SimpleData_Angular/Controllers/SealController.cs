@@ -1,4 +1,7 @@
-﻿using SimpleData_Angular_BussinessServices.Services;
+﻿using SimpleData_Angular.Models.Seal;
+using SimpleData_Angular_BussinessServices.Services;
+using SimpleData_Angular_BussinessServices.Services.Impl;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace SimpleData_Angular.Controllers
@@ -13,9 +16,9 @@ namespace SimpleData_Angular.Controllers
 
 		#region Constructor
 
-		public SealController(ISealService sealService)
+		public SealController()
 		{
-			_sealService = sealService;
+			_sealService = new SealService();
 		}
 
 		#endregion
@@ -27,7 +30,7 @@ namespace SimpleData_Angular.Controllers
 
 		public JsonResult GetSeals()
 		{
-			var seals = _sealService.GetAllSeals();
+			IEnumerable<SealViewModel> seals = _sealService.GetAllSeals();
 			return Json(seals, JsonRequestBehavior.AllowGet);
 		}
 

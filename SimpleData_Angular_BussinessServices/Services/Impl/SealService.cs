@@ -1,4 +1,7 @@
-﻿namespace SimpleData_Angular_BussinessServices.Services.Impl
+﻿using System;
+using System.Collections.Generic;
+
+namespace SimpleData_Angular_BussinessServices.Services.Impl
 {
 	/// <summary>
 	/// SealService Class.
@@ -21,7 +24,8 @@
 		/// </summary>
 		public dynamic GetAllSeals()
 		{
-			return BaseService.Db.Seals;
+			var result = BaseService.Db.Seals.FindAllByIsActive(true);
+			return result;
 		}
 
 		#endregion
