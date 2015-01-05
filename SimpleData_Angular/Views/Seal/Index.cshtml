@@ -21,7 +21,8 @@
 			<span class="col-sm-2">{{seal.Age}}</span>
 			<span class="col-sm-2">{{seal.Photo}}</span>
 			<span class="col-sm-2">
-				<button class="btn btn-link">Edit</button></span>
+			<button class="btn btn-link" ng-click="sealCtrl.editSeal(seal)">Edit</button></span>
 		</div>
+		@Html.Partial("_Details")
 	</div>
 </div>

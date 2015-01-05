@@ -1,0 +1,37 @@
+﻿<div id="sealFormWindow" style="display: none;">
+	<div ng-controller="DetailsController as detailCtrl">
+		<form name="sealForm" ng-submit="sealForm.$valid && detailCtrl.submitSeal()" novalidate>
+			<div class="row">
+				<div class="editor-label col-sm-2">First Name:</div>
+				<div class="col-sm-2">
+					<input name="FirstName" type="text" ng-model="sealCtrl.sealModel.FirstName" required />
+				</div>
+			</div>
+			<div class="row">
+				<div class="editor-label col-sm-2">Last Name:</div>
+				<div class="col-sm-2">
+					<input name="LastName" type="text" ng-model="sealCtrl.sealModel.LastName" required />
+				</div>
+			</div>
+			<div class="row">
+				<div class="editor-label col-sm-2">Age:</div>
+				<div class="col-sm-2">
+					<input name="Age" type="text" ng-model="sealCtrl.sealModel.Age" required />
+				</div>
+			</div>
+			<div class="row">
+				<div class="editor-label col-sm-2">Photo:</div>
+				<div class="col-sm-2">
+					<input name="Photo" type="text" ng-model="sealCtrl.sealModel.Photo" readonly="readonly" required />
+				</div>
+			</div>
+			<div class="row">
+				<div class="editor-label col-sm-2">Is Active:</div>
+				<div class="col-sm-2">
+					<input name="IsActive" type="text" ng-model="sealCtrl.sealModel.IsActive" required />
+				</div>
+			</div>
+			<button type="submit" class="btn btn-success">Save</button>
+		</form>
+	</div>
+</div>
